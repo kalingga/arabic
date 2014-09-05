@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'KFGQPC_Naskh';
+  src: url('../font/KFC_naskh.eot');
+  src: local('KFGQPC Uthman Taha Naskh'), url('../font/KFC_naskh.otf') format('opentype');
+}
+
+.arab {
+  font-size: 25px!important; line-height: 45px!important;
+  font-family: "KFGQPC Uthman Taha Naskh", KFGQPC_Naskh, "Traditional Arabic", Tahoma, sans-serif;
+  font-weight: normal;
+  text-align: right;
+  direction: rtl;
+  background-image: url(../img/grs.png);
+  margin-bottom: 25px!important;
+  display: block;
+  float: right;
+  width: 100%;
+}
