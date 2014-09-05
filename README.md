@@ -21,7 +21,5 @@ http://wordpress.org | http://emka.web.id
 ####Regard
 Khoirul Anwar a.k.a lorosukmo
 
-http://choiroel.wordpress.com
-
 #*NOTE:
 >Beberapa hosting tidak support.
