@@ -1,17 +1,16 @@
 (ng)Arab Wordpress Plugin
 ======
 
-###(ng)Arab Wordpress Plugin
-Plugin (ng)Arab ini dibuat untuk merapikan tulisan posting diwebsite berbasis CMS Wordpress yang menggunakan huruf arab.
+Plugin (ng)Arab ini dibuat untuk merapikan tulisan posting diwebsite berbasis CMS Wordpress
 
 
 ###HOW TO
 - Upload plugin (ng)Arab, kemudian aktifkan plugin.
-- Gunakan shortcode ```[ngarab]tulisan arab[/ngarab]```.
-*contoh: ```html [ngarab] بسم الله الرحمن الرحيم[/ngarab]```
+- Gunakan shortcode ```[ngarab]tulisan arab[/ngarab]``` pada postingan anda.
+>contoh: ```[ngarab] بسم الله الرحمن الرحيم[/ngarab]```
 
 ###DEMO
-http://pelajarnujogja.or.id | http://ipnudiy.or.id
+http://pelajarnujogja.or.id/demo-tulisan-arab
 
 OK. Just it..
 
@@ -19,5 +18,9 @@ OK. Just it..
 http://wordpress.org | http://emka.web.id
 
 ####Regard
-Khoirul Anwar a.k.a LoroSukmo
-*http://lorosukmo.github.io
+Khoirul Anwar a.k.a lorosukmo
+
+http://choiroel.wordpress.com
+
+#*NOTE:
+>Beberapa hosting tidak support.
