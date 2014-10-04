@@ -1,11 +1,11 @@
 <?php
 
 /*
-Plugin Name: (ng)Arab
+Plugin Name: (ng)Arab V2
 Plugin URI: http://lorosukmo.github.io/
 Description: dedicated to http://pelajarnujogja.or.id and http://ipnudiy.or.id - ^ I ❤ OpenSource ^
 Author: Khoirul Anwar a.k.a Loro Sukmo
-Version: 1.0
+Version: 2.0
 Author URI: http://choiroel.wordpress.com/
 */
 

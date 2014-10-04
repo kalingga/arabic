@@ -1,4 +1,4 @@
-(ng)Arab Wordpress Plugin
+(ng)Arab Wordpress Plugin Versi 2
 ======
 
 Plugin (ng)Arab ini dibuat untuk merapikan tulisan posting diwebsite berbasis CMS Wordpress
