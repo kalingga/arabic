@@ -1,12 +1,8 @@
-@font-face {
-  font-family: 'KFGQPC_Naskh';
-  src: url('../font/KFC_naskh.eot');
-  src: local('KFGQPC Uthman Taha Naskh'), url('../font/KFC_naskh.otf') format('opentype');
-}
+@import url(http://fonts.googleapis.com/earlyaccess/amiri.css);
 
 .arab {
-  font-size: 25px!important; line-height: 45px!important;
-  font-family: "KFGQPC Uthman Taha Naskh", KFGQPC_Naskh, "Traditional Arabic", Tahoma, sans-serif;
+  font-size: 20px!important; line-height: 45px!important;
+  font-family: "Amiri", "Traditional Arabic", serif;
   font-weight: normal;
   text-align: right;
   direction: rtl;
