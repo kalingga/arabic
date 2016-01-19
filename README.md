@@ -16,10 +16,10 @@ http://pelajarnujogja.or.id/demo-tulisan-arab
 OK. Just it..
 
 ###Thanks
-http://wordpress.org | http://emka.web.id
+http://wordpress.org | http://emka.web.id | http://www.ipnudiy.or.id | http://pelajarnujogja.or.id
 
 ####Regard
 Khoirul Anwar a.k.a lorosukmo
 
 #*NOTE:
->Beberapa hosting tidak support.
+>All supported. jika ada tulisan arab yang error gunakan `Collation` pada database dengan `utf8_general_ci`
