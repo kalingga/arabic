@@ -8,7 +8,7 @@ Author: Khoirul Anwar a.k.a Loro Sukmo
 Version: 2.0
 Author URI: http://choiroel.wordpress.com/
 */
-
+include_once('updater.php');
 //fungsi load css
 function makeup_arab() {
 	$src = plugins_url('/css/wedak.css', __FILE__);
@@ -22,4 +22,4 @@ return '<p class="arab">' . $content . '</p>';
 }
 //hooking
 add_shortcode( 'ngarab', 'shortcode_arab' );
-?>
+
