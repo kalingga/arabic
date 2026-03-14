@@ -1,42 +1,38 @@
 <?php
+/**
+ * Plugin Name: (ng)Arab
+ * Plugin URI:  https://github.com/kalingga/arabic
+ * Description: A WordPress plugin to display Arabic text with clean typography using the LPMQ Isep Misbah font. Supports multi-line text (Surah).
+ * Version:     3.0.0
+ * Author:      Khoirul Aksara
+ * Author URI:  https://log.serat.us
+ * License:     GPLv2 or later
+ * License URI: https://www.gnu.org/licenses/gpl-2.0.html
+ * Text Domain: arabic
+ */
 
-/*
-Plugin Name: (ng)Arab V3
-Plugin URI: https://log.serat.us
-Description: Plugin WordPress untuk menampilkan teks Arab dengan tipografi yang rapi menggunakan font LPMQ Isep Misbah. Mendukung teks multi-baris (Surah) dan pembaruan otomatis via GitHub.
-Author: Khoirul Aksara
-Version: 3.0
-Author URI: https://log.serat.us
-*/
-
-// Initialize GitHub Updater
-if ( is_admin() ) { // we only need this in the admin area
-	include_once( 'updater.php' );
-	$config = array(
-		'slug'               => plugin_basename( __FILE__ ),
-		'proper_folder_name' => 'arabic',
-		'api_url'            => 'https://api.github.com/repos/kalingga/arabic',
-		'raw_url'            => 'https://raw.githubusercontent.com/kalingga/arabic/master',
-		'github_url'         => 'https://github.com/kalingga/arabic',
-		'zip_url'            => 'https://github.com/kalingga/arabic/archive/master.zip',
-		'requires'           => '3.0',
-		'tested'             => '4.0',
-		'readme'             => 'README.md',
-	);
-	new WP_GitHub_Updater( $config );
+// If this file is called directly, abort.
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
 }
 
-//fungsi load css
-function makeup_arab() {
-	$src = plugins_url('/css/wedak.css', __FILE__);
-	wp_enqueue_style( 'wedak', $src );
+/**
+ * Load plugin styles.
+ */
+function ngarab_enqueue_styles() {
+	$src = plugins_url( 'css/wedak.css', __FILE__ );
+	wp_enqueue_style( 'ngarab-styles', $src, array(), '3.0.0' );
 }
-makeup_arab();
+add_action( 'wp_enqueue_scripts', 'ngarab_enqueue_styles' );
 
-//fungsi shortcode
-function shortcode_arab( $atts, $content = null ) {
+/**
+ * Shortcode to display Arabic text.
+ *
+ * @param array  $atts    Shortcode attributes.
+ * @param string $content Shortcode content.
+ * @return string
+ */
+function ngarab_shortcode_handler( $atts, $content = null ) {
 	return '<div class="arab">' . wpautop( trim( $content ) ) . '</div>';
 }
-//hooking
-add_shortcode( 'ngarab', 'shortcode_arab' );
-
+add_shortcode( 'ngarab', 'ngarab_shortcode_handler' );
