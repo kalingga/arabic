@@ -10,7 +10,7 @@
 - **Pembaruan Otomatis**: Terintegrasi dengan GitHub Updater untuk memastikan Anda selalu mendapatkan versi terbaru.
 - **Optimasi CSS**: Gaya CSS dipaksa (*forced*) menggunakan `!important` agar tidak bentrok dengan tema WordPress yang Anda gunakan.
 
-## 🛠 Cara Instalasi
+## Cara Instalasi
 
 1. Download atau Clone repositori ini ke dalam folder `/wp-content/plugins/arabic/`.
 2. Aktifkan plugin **(ng)Arab V3** melalui menu **Plugins** di Dashboard WordPress Anda.
