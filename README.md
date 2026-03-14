@@ -29,7 +29,7 @@ Gunakan shortcode `[ngarab]` untuk membungkus teks Arab Anda.
 ### Penggunaan Shortcode
 Gunakan format berikut untuk fitur lengkap:
 ```
-[ngarab font="lateef" color="#c0392b" trans="Bismillah" trj="Dengan menyebut nama Allah" copy="yes"]
+[ngarab font="scheherazade" color="#c0392b" trans="Bismillah" trj="Dengan menyebut nama Allah" copy="yes"]
 بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ
 [/ngarab]
 ```
