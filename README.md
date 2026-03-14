@@ -1,14 +1,21 @@
 # (ng)Arab V3
 
-**(ng)Arab** adalah plugin WordPress yang dirancang untuk menampilkan teks Arab dengan tipografi yang elegan dan rapi. Plugin ini sangat cocok untuk menampilkan ayat Al-Qur'an, Hadits, atau teks Arab lainnya pada postingan website Anda.
+**(ng)Arab** adalah solusi tipografi Arab premium untuk setiap website WordPress. Menampilkan teks Arab, ayat Al-Qur'an, atau Hadits dengan berbagai pilihan font berkualitas tinggi, warna kustom, transliterasi, dan dukungan native Gutenberg block.
 
 ## Fitur Utama
 
-- **Font LPMQ Isep Misbah**: Menggunakan font standar Kementerian Agama RI untuk keterbacaan yang maksimal.
+- **Multi-Font Support**: Mendukung berbagai font Arab standar industri (LPMQ, Amiri, Lateef, dsb) untuk keterbacaan maksimal.
 - **Performa Tinggi**: Menggunakan format font `.woff2` yang sangat ringan (kompresi hingga 60%) namun tetap memiliki fallback `.ttf`.
 - **Dukungan Multi-baris**: Sekarang mendukung penulisan teks panjang seperti satu Surah penuh tanpa merusak tata letak.
 - **Pembaruan Otomatis**: Terintegrasi dengan GitHub Updater untuk memastikan Anda selalu mendapatkan versi terbaru.
 - **Optimasi CSS**: Gaya CSS dipaksa (*forced*) menggunakan `!important` agar tidak bentrok dengan tema WordPress yang Anda gunakan.
+
+### Fitur Utama
+- **Gutenberg Block**: Dukungan penuh untuk editor blok modern WordPress.
+- **Pilihan Font Luas**: Pilih dari berbagai font populer (LPMQ, Amiri, Lateef, Noto, dsb).
+- **Terjemahan & Transliterasi**: Tampilkan teks latin and arti secara otomatis.
+- **Warna Kustom**: Atur warna teks Arab sesuai keinginan.
+- **Tombol Salin**: Memudahkan pengunjung untuk menyalin teks Arab.
 
 ## Cara Instalasi
 
@@ -18,6 +25,21 @@
 ## Cara Penggunaan
 
 Gunakan shortcode `[ngarab]` untuk membungkus teks Arab Anda.
+
+### Penggunaan Shortcode
+Gunakan format berikut untuk fitur lengkap:
+```
+[ngarab font="lateef" color="#c0392b" trans="Bismillah" trj="Dengan menyebut nama Allah" copy="yes"]
+بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ
+[/ngarab]
+```
+
+**Atribut Tersedia:**
+- `font`: `lpmq`, `amiri`, `amiri-quran`, `lateef`, `noto-nastaliq`, `scheherazade`.
+- `color`: Kode warna hex (misal: `#ff0000`).
+- `trans`: Teks transliterasi latin.
+- `trj`: Teks terjemahan/arti.
+- `copy`: Set `yes` untuk memunculkan tombol salin.
 
 ### Contoh Teks Pendek:
 `[ngarab]بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ[/ngarab]`

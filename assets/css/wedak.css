@@ -1,0 +1,102 @@
+:root {
+  --ng-arab-font-size: 24pt;
+  --ng-arab-line-height: 45px;
+  --ng-arab-font-family: 'LPMQ', 'Amiri', 'Traditional Arabic', serif;
+  --ng-arab-color: inherit;
+}
+
+@font-face {
+  font-family: 'LPMQ';
+  src: url('../font/LPMQ.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.arab {
+  font-size: var(--ng-arab-font-size) !important;
+  line-height: var(--ng-arab-line-height) !important;
+  font-family: var(--ng-arab-font-family) !important;
+  color: var(--ng-arab-color) !important;
+  font-weight: normal !important;
+  text-align: right !important;
+  direction: rtl !important;
+  margin-bottom: 25px !important;
+  display: block !important;
+  width: 100% !important;
+  clear: both !important;
+}
+
+.arab p {
+  font-size: calc(var(--ng-arab-font-size) * 0.8) !important; /* Scaled for nested paragraphs */
+  line-height: var(--ng-arab-line-height) !important;
+  font-family: var(--ng-arab-font-family) !important;
+  color: var(--ng-arab-color) !important;
+  margin-bottom: 15px !important;
+  text-align: right !important;
+  direction: rtl !important;
+}
+
+/* Advanced Features Styles */
+.arab-meta {
+  margin-top: 10px !important;
+  text-align: left !important;
+  direction: ltr !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif !important;
+}
+
+.arab-trans {
+  font-style: italic !important;
+  color: #666 !important;
+  font-size: 14px !important;
+  display: block !important;
+}
+
+.arab-trj {
+  font-weight: 500 !important;
+  color: #333 !important;
+  font-size: 15px !important;
+  display: block !important;
+  margin-top: 2px !important;
+}
+
+.arab-container {
+  position: relative;
+  margin-bottom: 25px;
+  padding-bottom: 10px; /* Space for the bottom-right copy button */
+}
+
+.arab-copy-btn {
+  position: absolute;
+  bottom: -5px;
+  right: 0px;
+  background: transparent;
+  border: 1px solid rgba(0,0,0,0.08);
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  color: #888;
+  transition: all 0.2s ease;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  opacity: 0.6;
+}
+
+.arab-copy-btn:hover {
+  background: rgba(0,0,0,0.03);
+  color: #333;
+  opacity: 1;
+  border-color: rgba(0,0,0,0.15);
+}
+
+.arab-copy-btn svg {
+  width: 14px;
+  height: 14px;
+}
+
+.arab-copy-success {
+  background: #46b450 !important;
+  color: #fff !important;
+}
