@@ -1,20 +1,20 @@
 === (ng)Arab ===
 Contributors: khoirulaksara
 Tags: arabic, font, quran, typography, lpmq
-Requires at least: 4.7
+Requires at least: 5.0
 Tested up to: 6.9
-Stable tag: 3.1.0
+Stable tag: 3.1.1
 Requires PHP: 5.6
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Premium Arabic typography plugin. Easily display Arabic text with high-performance fonts, color customization, transliterations, and a dedicated Gutenberg block.
+Professional Arabic typography. Display beautiful Arabic text with high-performance fonts, colorization, transliterations, and Gutenberg support.
 
 == Description ==
 
-**(ng)Arab** (pronounced 'Ngarab') is designed for bloggers, scholars, and developers who want to display Arabic text, such as Quranic verses or Hadiths, with professional-grade typography.
+**(ng)Arab** (pronounced 'Ngarab') is designed for bloggers, scholars, and developers who want to display Arabic text, such as Quranic verses or Hadiths, with high-quality typography.
 
-The plugin utilizes high-quality Arabic fonts in lightweight WOFF2 format, ensuring maximum legibility and aesthetic appeal for any international project.
+The plugin utilizes professional Arabic fonts in lightweight WOFF2 format, ensuring maximum legibility and aesthetic appeal for any international project.
 
 * **Gutenberg Ready**: Full support for the Block Editor with a native **(ng)Arab** block.
 * **Font Selection**: Choose from 6+ professional Arabic fonts including **LPMQ**, **Amiri**, and **Scheherazade**.
@@ -41,10 +41,15 @@ Navigate to **Settings -> (ng)Arab** in your WordPress dashboard to find all cus
 == Screenshots ==
 
 1. Arabic text displayed using the LPMQ font.
-2. The new settings page for customizing typography and selecting fonts.
+2. The settings page for customizing typography and selecting fonts.
 3. Shortcode helper button in the editor toolbar.
 
 == Changelog ==
+
+= 3.1.1 =
+* **Compliance Update**: Added full internationalization (i18n) support.
+* **Security**: Enhanced output sanitization and script organization.
+* **Compatibility**: Updated for WordPress 6.4.
 
 = 3.1.0 =
 * **Added Gutenberg Block** support for modern editing.
@@ -61,7 +66,11 @@ Navigate to **Settings -> (ng)Arab** in your WordPress dashboard to find all cus
 * Added support for multi-line and paragraph-style Arabic text.
 * Standardized code and documentation for WordPress.org repository.
 
+== Privacy Policy ==
+
+This plugin uses **Google Fonts** to provide high-quality Arabic typography. No user data is sent to external servers by this plugin itself, but loading fonts from Google may involve standard browser requests to Google's CDN.
+
 == Upgrade Notice ==
 
-= 3.1.0 =
-New layout customization features! You can now adjust font sizes directly from the dashboard.
+= 3.1.1 =
+Guideline compliance and security updates. Recommended for all users.
