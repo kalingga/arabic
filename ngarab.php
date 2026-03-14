@@ -5,7 +5,7 @@ Plugin Name: (ng)Arab V3
 Plugin URI: https://log.serat.us
 Description: Plugin WordPress untuk menampilkan teks Arab dengan tipografi yang rapi menggunakan font LPMQ Isep Misbah. Mendukung teks multi-baris (Surah) dan pembaruan otomatis via GitHub.
 Author: Khoirul Aksara
-Version: 3.0
+Version: 3.1
 Author URI: https://log.serat.us
 */
 
