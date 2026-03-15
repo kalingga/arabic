@@ -55,7 +55,6 @@ Gunakan format berikut untuk fitur lengkap:
 
 ## Lisensi & Author
 *   **Author**: Khoirul Aksara
-*   **Original Author**: Khoirul Anwar a.k.a Loro Sukmo
 *   **License**: GNU General Public License v2
 *   **URL**: [https://log.serat.us](https://log.serat.us)
 

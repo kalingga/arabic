@@ -4,7 +4,7 @@
     tinymce.create('tinymce.plugins.ngarab', {
         init : function(ed, url) {
             ed.addButton('ngarab', {
-                title : __('Insert (ng)Arab Shortcode', 'arabic'),
+                title : __('Insert (ng)Arab Shortcode', 'ngarab'),
                 cmd : 'ngarab_insert_shortcode',
                 image : url + '/../icon.svg',
                 text: '(ng)Arab'
@@ -12,20 +12,20 @@
 
             ed.addCommand('ngarab_insert_shortcode', function() {
                 ed.windowManager.open({
-                    title: __('Insert Arabic Text', 'arabic'),
+                    title: __('Insert Arabic Text', 'ngarab'),
                     body: [
                         {
                             type: 'listbox',
                             name: 'font_family',
-                            label: __('Select Font', 'arabic'),
+                            label: __('Select Font', 'ngarab'),
                             'values': [
-                                {text: __('Default (from Settings)', 'arabic'), value: ''},
-                                {text: __('LPMQ Isep Misbah', 'arabic'), value: 'lpmq'},
-                                {text: __('Amiri', 'arabic'), value: 'amiri'},
-                                {text: __('Amiri Quran', 'arabic'), value: 'amiri-quran'},
-                                {text: __('Lateef', 'arabic'), value: 'lateef'},
-                                {text: __('Noto Nastaliq Urdu', 'arabic'), value: 'noto-nastaliq'},
-                                {text: __('Scheherazade New', 'arabic'), value: 'scheherazade'}
+                                {text: __('Default (from Settings)', 'ngarab'), value: ''},
+                                {text: __('LPMQ Isep Misbah', 'ngarab'), value: 'lpmq'},
+                                {text: __('Amiri', 'ngarab'), value: 'amiri'},
+                                {text: __('Amiri Quran', 'ngarab'), value: 'amiri-quran'},
+                                {text: __('Lateef', 'ngarab'), value: 'lateef'},
+                                {text: __('Noto Nastaliq Urdu', 'ngarab'), value: 'noto-nastaliq'},
+                                {text: __('Scheherazade New', 'ngarab'), value: 'scheherazade'}
                             ],
                             onselect: function(e) {
                                 var fontStacks = {
@@ -46,13 +46,13 @@
                         },
                         {
                             type: 'container',
-                            label: __('Preview', 'arabic'),
+                            label: __('Preview', 'ngarab'),
                             html: '<div id="ngarab-mce-preview" class="mce-ngarab-preview" style="font-family: \'LPMQ\', serif;">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</div>'
                         },
                         {
                             type: 'textbox',
                             name: 'arabic_text',
-                            label: __('Arabic Text', 'arabic'),
+                            label: __('Arabic Text', 'ngarab'),
                             multiline: true,
                             minWidth: 400,
                             minHeight: 150
@@ -60,23 +60,23 @@
                         {
                             type: 'colorpicker',
                             name: 'text_color',
-                            label: __('Arabic Color', 'arabic')
+                            label: __('Arabic Color', 'ngarab')
                         },
                         {
                             type: 'textbox',
                             name: 'trans_text',
-                            label: __('Transliteration (Latin)', 'arabic')
+                            label: __('Transliteration (Latin)', 'ngarab')
                         },
                         {
                             type: 'textbox',
                             name: 'trj_text',
-                            label: __('Translation (Arti)', 'arabic')
+                            label: __('Translation (Arti)', 'ngarab')
                         },
                         {
                             type: 'checkbox',
                             name: 'show_copy',
-                            label: __('Show Copy Button', 'arabic'),
-                            text: __('Activate', 'arabic')
+                            label: __('Show Copy Button', 'ngarab'),
+                            text: __('Activate', 'ngarab')
                         }
                     ],
                     onsubmit: function(e) {

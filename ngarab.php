@@ -1,14 +1,14 @@
 <?php
 /**
  * Plugin Name: (ng)Arab
- * Plugin URI:  https://github.com/kalingga/arabic
+ * Plugin URI:  https://github.com/khoirulaksara/ngarab
  * Description: A premium Arabic typography solution for WordPress. Display beautiful Arabic text with multiple fonts, colors, transliterations, and native Gutenberg support.
  * Version:     3.1.1
  * Author:      Khoirul Aksara
  * Author URI:  https://log.serat.us
  * License:     GPLv2 or later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain: arabic
+ * Text Domain: ngarab
  */
 
 // If this file is called directly, abort.
@@ -43,8 +43,8 @@ add_action( 'admin_init', 'ngarab_register_settings' );
  */
 function ngarab_add_admin_menu() {
 	add_options_page(
-		__( '(ng)Arab Settings', 'arabic' ),
-		__( '(ng)Arab', 'arabic' ),
+		__( '(ng)Arab Settings', 'ngarab' ),
+		__( '(ng)Arab', 'ngarab' ),
 		'manage_options',
 		'ngarab',
 		'ngarab_settings_page'
@@ -58,7 +58,7 @@ add_action( 'admin_menu', 'ngarab_add_admin_menu' );
 function ngarab_settings_page() {
 	?>
 	<div class="wrap">
-		<h1><?php esc_html_e( '(ng)Arab Settings', 'arabic' ); ?></h1>
+		<h1><?php esc_html_e( '(ng)Arab Settings', 'ngarab' ); ?></h1>
 		<form method="post" action="options.php">
 			<?php
 			settings_fields( 'ngarab_settings_group' );
@@ -66,28 +66,28 @@ function ngarab_settings_page() {
 			?>
 			<table class="form-table">
 				<tr valign="top">
-					<th scope="row"><?php esc_html_e( 'Font Size (pt)', 'arabic' ); ?></th>
+					<th scope="row"><?php esc_html_e( 'Font Size (pt)', 'ngarab' ); ?></th>
 					<td><input type="number" name="ngarab_font_size" value="<?php echo esc_attr( get_option( 'ngarab_font_size', 24 ) ); ?>" /></td>
 				</tr>
 				<tr valign="top">
-					<th scope="row"><?php esc_html_e( 'Line Height (px)', 'arabic' ); ?></th>
+					<th scope="row"><?php esc_html_e( 'Line Height (px)', 'ngarab' ); ?></th>
 					<td><input type="number" name="ngarab_line_height" value="<?php echo esc_attr( get_option( 'ngarab_line_height', 45 ) ); ?>" /></td>
 				</tr>
 				<tr valign="top">
-					<th scope="row"><?php esc_html_e( 'Default Arabic Font', 'arabic' ); ?></th>
+					<th scope="row"><?php esc_html_e( 'Default Arabic Font', 'ngarab' ); ?></th>
 					<td>
 						<?php $current_font = get_option( 'ngarab_font_family', 'lpmq' ); ?>
 						<select name="ngarab_font_family" id="ngarab_font_family_select">
-							<option value="lpmq" <?php selected( $current_font, 'lpmq' ); ?>><?php esc_html_e( 'LPMQ Isep Misbah (Local Special)', 'arabic' ); ?></option>
-							<option value="amiri" <?php selected( $current_font, 'amiri' ); ?>><?php esc_html_e( 'Amiri (Google Font)', 'arabic' ); ?></option>
-							<option value="amiri-quran" <?php selected( $current_font, 'amiri-quran' ); ?>><?php esc_html_e( 'Amiri Quran (Google Font)', 'arabic' ); ?></option>
-							<option value="lateef" <?php selected( $current_font, 'lateef' ); ?>><?php esc_html_e( 'Lateef (Google Font)', 'arabic' ); ?></option>
-							<option value="noto-nastaliq" <?php selected( $current_font, 'noto-nastaliq' ); ?>><?php esc_html_e( 'Noto Nastaliq Urdu (Google Font)', 'arabic' ); ?></option>
-							<option value="scheherazade" <?php selected( $current_font, 'scheherazade' ); ?>><?php esc_html_e( 'Scheherazade New (Google Font)', 'arabic' ); ?></option>
+							<option value="lpmq" <?php selected( $current_font, 'lpmq' ); ?>><?php esc_html_e( 'LPMQ Isep Misbah (Local Special)', 'ngarab' ); ?></option>
+							<option value="amiri" <?php selected( $current_font, 'amiri' ); ?>><?php esc_html_e( 'Amiri (Google Font)', 'ngarab' ); ?></option>
+							<option value="amiri-quran" <?php selected( $current_font, 'amiri-quran' ); ?>><?php esc_html_e( 'Amiri Quran (Google Font)', 'ngarab' ); ?></option>
+							<option value="lateef" <?php selected( $current_font, 'lateef' ); ?>><?php esc_html_e( 'Lateef (Google Font)', 'ngarab' ); ?></option>
+							<option value="noto-nastaliq" <?php selected( $current_font, 'noto-nastaliq' ); ?>><?php esc_html_e( 'Noto Nastaliq Urdu (Google Font)', 'ngarab' ); ?></option>
+							<option value="scheherazade" <?php selected( $current_font, 'scheherazade' ); ?>><?php esc_html_e( 'Scheherazade New (Google Font)', 'ngarab' ); ?></option>
 						</select>
 						
 						<div class="ngarab-preview-box">
-							<span class="ngarab-preview-label"><?php esc_html_e( 'Preview:', 'arabic' ); ?></span>
+							<span class="ngarab-preview-label"><?php esc_html_e( 'Preview:', 'ngarab' ); ?></span>
 							<div id="ngarab-settings-preview">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</div>
 						</div>
 					</td>

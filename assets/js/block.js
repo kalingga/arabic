@@ -20,13 +20,13 @@
             const { attributes: { content, font, color, trans, trj, showCopy }, setAttributes } = props;
 
             const fontOptions = [
-                {label: __('Default', 'arabic'), value: ''},
-                {label: __('LPMQ Isep Misbah', 'arabic'), value: 'lpmq'},
-                {label: __('Amiri', 'arabic'), value: 'amiri'},
-                {label: __('Amiri Quran', 'arabic'), value: 'amiri-quran'},
-                {label: __('Lateef', 'arabic'), value: 'lateef'},
-                {label: __('Noto Nastaliq Urdu', 'arabic'), value: 'noto-nastaliq'},
-                {label: __('Scheherazade New', 'arabic'), value: 'scheherazade'}
+                {label: __('Default', 'ngarab'), value: ''},
+                {label: __('LPMQ Isep Misbah', 'ngarab'), value: 'lpmq'},
+                {label: __('Amiri', 'ngarab'), value: 'amiri'},
+                {label: __('Amiri Quran', 'ngarab'), value: 'amiri-quran'},
+                {label: __('Lateef', 'ngarab'), value: 'lateef'},
+                {label: __('Noto Nastaliq Urdu', 'ngarab'), value: 'noto-nastaliq'},
+                {label: __('Scheherazade New', 'ngarab'), value: 'scheherazade'}
             ];
 
             const fontStacks = {
@@ -41,41 +41,41 @@
 
             return [
                 wp.element.createElement(InspectorControls, { key: 'inspector' },
-                    wp.element.createElement(PanelBody, { title: __('Typography', 'arabic') },
+                    wp.element.createElement(PanelBody, { title: __('Typography', 'ngarab') },
                         wp.element.createElement(SelectControl, {
-                            label: __('Arabic Font', 'arabic'),
+                            label: __('Arabic Font', 'ngarab'),
                             value: font,
                             options: fontOptions,
                             onChange: (val) => setAttributes({ font: val })
                         })
                     ),
                     wp.element.createElement(PanelColorSettings, {
-                        title: __('Colors', 'arabic'),
+                        title: __('Colors', 'ngarab'),
                         colorSettings: [
                             {
                                 value: color,
                                 onChange: (val) => setAttributes({ color: val }),
-                                label: __('Arabic Text Color', 'arabic')
+                                label: __('Arabic Text Color', 'ngarab')
                             }
                         ]
                     }),
-                    wp.element.createElement(PanelBody, { title: __('Meta Settings', 'arabic') },
+                    wp.element.createElement(PanelBody, { title: __('Meta Settings', 'ngarab') },
                         wp.element.createElement(RichText, {
                             tagName: 'div',
-                            placeholder: __('Transliteration...', 'arabic'),
+                            placeholder: __('Transliteration...', 'ngarab'),
                             value: trans,
                             onChange: (val) => setAttributes({ trans: val }),
                             style: { fontStyle: 'italic', marginBottom: '10px' }
                         }),
                         wp.element.createElement(RichText, {
                             tagName: 'div',
-                            placeholder: __('Translation (Terjemahan)...', 'arabic'),
+                            placeholder: __('Translation (Terjemahan)...', 'ngarab'),
                             value: trj,
                             onChange: (val) => setAttributes({ trj: val }),
                             style: { fontWeight: 'bold' }
                         }),
                         wp.element.createElement(ToggleControl, {
-                            label: __('Show Copy Button', 'arabic'),
+                            label: __('Show Copy Button', 'ngarab'),
                             checked: showCopy,
                             onChange: (val) => setAttributes({ showCopy: val })
                         })
@@ -94,7 +94,7 @@
                         },
                         value: content,
                         onChange: (val) => setAttributes({ content: val }),
-                        placeholder: __('أدخل النص العربي هنا...', 'arabic')
+                        placeholder: __('أدخل النص العربي هنا...', 'ngarab')
                     })
                 )
             ];
