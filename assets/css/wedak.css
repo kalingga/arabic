@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri&family=Amiri+Quran&family=Lateef&family=Noto+Nastaliq+Urdu&family=Scheherazade+New&display=swap');
+
 :root {
   --ng-arab-font-size: 24pt;
   --ng-arab-line-height: 45px;
@@ -15,8 +17,8 @@
 .arab {
   font-size: var(--ng-arab-font-size) !important;
   line-height: var(--ng-arab-line-height) !important;
-  font-family: var(--ng-arab-font-family) !important;
-  color: var(--ng-arab-color) !important;
+  font-family: var(--ng-arab-font-family);
+  color: var(--ng-arab-color);
   font-weight: normal !important;
   text-align: right !important;
   direction: rtl !important;
@@ -29,8 +31,8 @@
 .arab p {
   font-size: calc(var(--ng-arab-font-size) * 0.8) !important; /* Scaled for nested paragraphs */
   line-height: var(--ng-arab-line-height) !important;
-  font-family: var(--ng-arab-font-family) !important;
-  color: var(--ng-arab-color) !important;
+  font-family: var(--ng-arab-font-family);
+  color: var(--ng-arab-color);
   margin-bottom: 15px !important;
   text-align: right !important;
   direction: rtl !important;
@@ -99,4 +101,21 @@
 .arab-copy-success {
   background: #46b450 !important;
   color: #fff !important;
+}
+
+/* TinyMCE Editor Preview */
+.mce-ngarab-preview {
+    padding: 20px;
+    background: #f9f9f9;
+    border: 1px dashed #ccc;
+    text-align: right;
+    direction: rtl;
+    font-size: 30pt;
+    line-height: 1.5;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    margin: 10px 0;
 }

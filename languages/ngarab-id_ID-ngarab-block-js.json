@@ -1,0 +1,33 @@
+{
+    "translation-revision-date": "2026-03-25 13:52:00",
+    "generator": "Manual",
+    "domain": "ngarab",
+    "locale_data": {
+        "ngarab": {
+            "": {
+                "domain": "ngarab",
+                "lang": "id_ID",
+                "plural-forms": "nplurals=1; plural=0;"
+            },
+            "(ng)Arab": ["(ng)Arab"],
+            "Typography": ["Tipografi"],
+            "Arabic Font": ["Font Arab"],
+            "Colors": ["Warna"],
+            "Arabic Text Color": ["Warna Teks Arab"],
+            "Meta Settings": ["Pengaturan Meta"],
+            "Transliteration": ["Transliterasi"],
+            "Enter transliteration here...": ["Masukkan transliterasi di sini..."],
+            "Translation (Terjemahan)": ["Terjemahan"],
+            "Enter translation here...": ["Masukkan terjemahan di sini..."],
+            "Show Copy Button": ["Tampilkan Tombol Salin"],
+            "أدخل النص العربي هنا...": ["Masukkan teks Arab di sini..."],
+            "Default": ["Default"],
+            "LPMQ Isep Misbah": ["LPMQ Isep Misbah"],
+            "Amiri": ["Amiri"],
+            "Amiri Quran": ["Amiri Quran"],
+            "Lateef": ["Lateef"],
+            "Noto Nastaliq Urdu": ["Noto Nastaliq Urdu"],
+            "Scheherazade New": ["Scheherazade New"]
+        }
+    }
+}

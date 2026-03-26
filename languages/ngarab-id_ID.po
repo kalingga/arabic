@@ -1,0 +1,107 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: (ng)Arab 3.1.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-25 13:38+0700\n"
+"PO-Revision-Date: 2026-03-25 07:58+0000\n"
+"Last-Translator: \n"
+"Language-Team: Bahasa Indonesia\n"
+"Language: id_ID\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Domain: ngarab\n"
+"Plural-Forms: nplurals=1; plural=0;"
+
+#: assets/js/block.js:(ng)Arab
+msgid "(ng)Arab"
+msgstr "(ng)Arab"
+
+#: ngarab.php:47 ngarab.php:62
+msgid "(ng)Arab Settings"
+msgstr "Pengaturan (ng)Arab"
+
+#: ngarab.php:83
+msgid "Amiri (Google Font)"
+msgstr "Amiri (Google Font)"
+
+#: ngarab.php:84
+msgid "Amiri Quran (Google Font)"
+msgstr "Amiri Quran (Google Font)"
+
+#: assets/js/block.js:Arabic Font
+msgid "Arabic Font"
+msgstr "Font Arab"
+
+#: assets/js/block.js:Arabic Text Color
+msgid "Arabic Text Color"
+msgstr "Warna Teks Arab"
+
+#: assets/js/block.js:Colors
+msgid "Colors"
+msgstr "Warna"
+
+#: ngarab.php:78
+msgid "Default Arabic Font"
+msgstr "Font Arab Default"
+
+#: assets/js/block.js:Enter translation here...
+msgid "Enter translation here..."
+msgstr "Masukkan terjemahan di sini..."
+
+#: assets/js/block.js:Enter transliteration here...
+msgid "Enter transliteration here..."
+msgstr "Masukkan transliterasi di sini..."
+
+#: ngarab.php:70
+msgid "Font Size (pt)"
+msgstr "Ukuran Font (pt)"
+
+#: ngarab.php:85
+msgid "Lateef (Google Font)"
+msgstr "Lateef (Google Font)"
+
+#: ngarab.php:74
+msgid "Line Height (px)"
+msgstr "Tinggi Baris (px)"
+
+#: ngarab.php:82
+msgid "LPMQ Isep Misbah (Local Special)"
+msgstr "LPMQ Isep Misbah (Lokal Spesial)"
+
+#: assets/js/block.js:Meta Settings
+msgid "Meta Settings"
+msgstr "Pengaturan Meta"
+
+#: ngarab.php:86
+msgid "Noto Nastaliq Urdu (Google Font)"
+msgstr "Noto Nastaliq Urdu (Google Font)"
+
+#: ngarab.php:91
+msgid "Preview:"
+msgstr "Pratinjau:"
+
+#: ngarab.php:87
+msgid "Scheherazade New (Google Font)"
+msgstr "Scheherazade New (Google Font)"
+
+#: assets/js/block.js:Show Copy Button
+msgid "Show Copy Button"
+msgstr "Tampilkan Tombol Salin"
+
+#: assets/js/block.js:Translation (Terjemahan)
+msgid "Translation (Terjemahan)"
+msgstr "Terjemahan"
+
+#: assets/js/block.js:Transliteration
+msgid "Transliteration"
+msgstr "Transliterasi"
+
+#: assets/js/block.js:Typography
+msgid "Typography"
+msgstr "Tipografi"
+
+#: assets/js/block.js:أدخل النص العربي هنا...
+msgid "أدخل النص العربي هنا..."
+msgstr "Masukkan teks Arab di sini..."
