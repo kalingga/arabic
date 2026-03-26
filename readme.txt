@@ -1,7 +1,7 @@
 === (ng)Arab ===
 Contributors: khoirulaksara
 Donate link: https://paypal.me/gonzsky
-Tags: arabic, font, quran, typography, lpmq
+Tags: arabic, arabic typography, quran, rtl, arabic font, gutenberg
 Requires at least: 5.0
 Tested up to: 6.9
 Stable tag: 3.1.0
@@ -9,76 +9,80 @@ Requires PHP: 7.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Professional Arabic typography. Display beautiful Arabic text with high-performance fonts, colorization, transliterations, and Gutenberg support.
+Enhance and beautify Arabic text display in WordPress with advanced typography and improved readability—making your content clean, elegant, and beautiful, just like you.
 
 == Description ==
 
-**(ng)Arab** (pronounced 'Ngarab') is designed for bloggers, scholars, and developers who want to display Arabic text, such as Quranic verses or Hadiths, with high-quality typography.
+**(ng)Arab** (pronounced "Ngarab") is a powerful WordPress plugin for displaying Arabic text with professional typography. Whether you're sharing Qur’an verses, Hadiths, or any Arabic content, (ng)Arab helps your text look cleaner, smoother, and more elegant—because great content deserves to look beautiful too.
 
-The plugin utilizes professional Arabic fonts in lightweight WOFF2 format, ensuring maximum legibility and aesthetic appeal for any international project.
+Built with attention to detail, this plugin uses carefully selected Arabic fonts in lightweight WOFF2 format, ensuring your content stays sharp, readable, and fast across all devices.
 
-* **Gutenberg Ready**: Full support for the Block Editor with a native **(ng)Arab** block.
+* **Gutenberg Ready**: Fully integrated with the Block Editor using a native **(ng)Arab** block.
+* **Arabic Typography Focus**: Crafted specifically to make Arabic text look its best.
 * **Font Selection**: Choose from 6+ professional Arabic fonts including **LPMQ**, **Amiri**, and **Scheherazade**.
-* **Transliteration & Translation**: Add latin reading and meaning labels directly under the Arabic text.
-* **Color Customization**: Easily change the color of your Arabic text via a color picker.
-* **Copy to Clipboard**: One-click copy button for your visitors to easily copy the Arabic text.
-* **Standardized Font**: Lightweight WOFF2 format for lightning-fast performance.
-* **Shortcode Helper**: Convenient button in both Classic and Block editors.
+* **RTL Optimized**: Proper right-to-left rendering with clean alignment and spacing.
+* **Transliteration & Translation**: Add Latin reading and meaning beneath your Arabic text effortlessly.
+* **Color Customization**: Give your text a touch of personality with easy color controls.
+* **Copy to Clipboard**: Let your visitors copy Arabic text with a single click.
+* **Optimized Performance**: Lightweight WOFF2 fonts for fast loading without compromise.
+* **Shortcode Helper**: Simple generator for both Classic and Block editors.
 
 == Installation ==
 
 1. Upload the `arabic` folder to the `/wp-content/plugins/` directory.
 2. Activate the plugin through the 'Plugins' menu in WordPress.
-3. Use the `[ngarab]` shortcode or the new **editor button** to insert your Arabic text.
+3. Use the `[ngarab]` shortcode or the **(ng)Arab block** to start displaying Arabic text.
 
 == Frequently Asked Questions ==
 
 = How do I use the new features? =
-You can use the **(ng)Arab block** in Gutenberg for the best experience. For shortcodes, use: `[ngarab font="lateef" color="#ff0000" trans="Bismillah" trj="Dengan nama Allah" copy="yes"] Teks Arab [/ngarab]`.
+Use the **(ng)Arab block** in Gutenberg for the best experience. You can also use the shortcode:
+
+`[ngarab font="lateef" color="#ff0000" trans="Bismillah" trj="Dengan nama Allah" copy="yes"] Teks Arab [/ngarab]`
 
 = Where can I change the font and size? =
-Navigate to **Settings -> (ng)Arab** in your WordPress dashboard to find all customization options.
+Go to **Settings → (ng)Arab** in your WordPress dashboard to customize fonts, layout, and more.
 
 == Screenshots ==
 
-1. Arabic text displayed.
-2. The settings page for customizing typography and selecting fonts.
-3. Shortcode helper button in the editor toolbar.
-4. Block editor interface.
+1. Beautiful Arabic text display.
+2. Settings page for typography customization.
+3. Shortcode helper inside the editor.
+4. Gutenberg block interface.
 
 == Upgrade Notice ==
 
 = 3.1.0 =
-Arabic Number Conversion & Enhanced RTL Editor. This update adds support for converting Western digits to Arabic numerals and improves the right-to-left editing experience.
+Arabic Number Conversion & Enhanced RTL Editor. Now your numbers can look just as Arabic as your text.
 
 = 3.0.0 =
-Initial Official Release. This version includes full Gutenberg support, premium typography, and repository-compliant security updates.
+Initial official release with full Gutenberg support, elegant typography, and WordPress.org compliance.
 
 == Changelog ==
 
 = 3.1.0 =
-* **Arabic Number Conversion**: Added feature to convert Western digits (0-9) to Arabic numerals (٠-٩).
-* **Text Alignment**: Added option for Left, Center, and Right alignment.
-* **Global Settings**: Added a toggle for global number conversion control.
+* **Arabic Number Conversion**: Convert Western digits (0–9) into Arabic numerals (٠–٩).
+* **Text Alignment**: Choose left, center, or right alignment.
+* **Global Settings**: Toggle number conversion globally.
 * **Shortcode & Block Support**: New `convert_num` and `align` attributes.
-* **Enhanced RTL Editor**: Improved right-to-left support and font styling in the editor modals.
-* **Font Update**: Optimized font stacks and set Scheherazade New as the default font.
+* **Enhanced RTL Editor**: Improved right-to-left editing experience.
+* **Font Update**: Refined font stacks with Scheherazade New as default.
 
 = 3.0.0 =
-* **Initial Official Release**.
-* **Gutenberg Ready**: Full support for the Block Editor with a native (ng)Arab block.
-* **Classic Editor Support**: Integrated TinyMCE shortcode generator.
-* **Premium Typography**: 6+ professional Arabic fonts including LPMQ, Amiri, and Lateef.
-* **Advanced Features**: Live transliteration, translation, and color customization.
-* **User Experience**: One-click Copy to Clipboard functionality and live font previews.
-* **Performance**: Optimized WOFF2 font loading and clean, modular script architecture.
-* **Compliance**: 100% WordPress.org guideline compliant code, security, and sanitization.
+* Initial official release.
+* Gutenberg support with native block.
+* Classic editor shortcode generator.
+* 6+ professional Arabic fonts including LPMQ, Amiri, and Lateef.
+* Transliteration, translation, and color customization.
+* Copy to Clipboard feature.
+* Optimized WOFF2 font loading.
+* Clean and modular architecture.
+* Fully compliant with WordPress.org guidelines.
 
 = 2.0.0 (Internal Release - 2015) =
-* **Performance Optimization:** Migrated font assets from .ttf to .woff2 format for significantly faster loading times and smaller file sizes.
-* Improved cross-browser compatibility for Arabic script rendering.
+* Migrated fonts from TTF to WOFF2 for better performance.
+* Improved Arabic rendering across browsers.
 
 = 1.0.0 (Private Release - 2014) =
-* Initial private release for internal projects and specific clients.
-* Core features for converting Latin text to (ng)Arab characters.
-* Basic selection of calligraphy-style fonts.
+* Initial internal release.
+* Basic Arabic conversion and font features.
