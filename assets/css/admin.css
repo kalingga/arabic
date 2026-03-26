@@ -267,3 +267,62 @@
     }
 }
 
+/* Switch Component */
+.ngarab-switch {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.ngarab-switch input {
+    display: none;
+}
+
+.ngarab-switch::before {
+    content: "";
+    width: 44px;
+    height: 22px;
+    background: #E4E4E4;
+    border-radius: 20px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.ngarab-switch::after {
+    content: "";
+    width: 16px;
+    height: 16px;
+    background: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    transform: translateX(3px);
+    transition: all 0.3s ease;
+}
+
+.ngarab-switch:has(input:checked)::before {
+    background: #000;
+}
+
+.ngarab-switch:has(input:checked)::after {
+    transform: translateX(25px);
+}
+
+.ngarab-switch-label {
+    font-size: 14px;
+    color: #50575e;
+}
+
+/* TinyMCE RTL Support */
+.mce-ngarab-rtl-textarea textarea,
+textarea.mce-ngarab-rtl-field,
+textarea.ngarab-rtl-field,
+.mce-ngarab-rtl-field,
+.ngarab-rtl-field {
+    direction: rtl !important;
+    text-align: right !important;
+    /* unicode-bidi: plaintext !important; */
+    font-size: 22px !important;
+    font-family: "Scheherazade New", "LPMQ", "Amiri", serif !important;
+    line-height: 1.5 !important;
+}

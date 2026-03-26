@@ -3,7 +3,7 @@
 :root {
   --ng-arab-font-size: 24pt;
   --ng-arab-line-height: 45px;
-  --ng-arab-font-family: 'LPMQ', 'Amiri', 'Traditional Arabic', serif;
+  --ng-arab-font-family: 'Scheherazade New', 'LPMQ', 'Amiri', 'Traditional Arabic', serif;
   --ng-arab-color: inherit;
 }
 
@@ -20,7 +20,7 @@
   font-family: var(--ng-arab-font-family);
   color: var(--ng-arab-color);
   font-weight: normal !important;
-  text-align: right !important;
+  /* text-align: right !important; */
   direction: rtl !important;
   margin-bottom: 25px !important;
   display: block !important;
@@ -34,7 +34,7 @@
   font-family: var(--ng-arab-font-family);
   color: var(--ng-arab-color);
   margin-bottom: 15px !important;
-  text-align: right !important;
+  /* text-align: right !important; */
   direction: rtl !important;
 }
 
@@ -118,4 +118,20 @@
     justify-content: center;
     border-radius: 4px;
     margin: 10px 0;
+}
+
+.mce-ngarab-rtl-field {
+    direction: rtl !important;
+    text-align: right !important;
+    font-size: 22px !important;
+    font-family: "LPMQ", "Amiri", serif !important;
+    line-height: 1.5 !important;
+}
+
+.ngarab-rtl-field {
+    direction: rtl !important;
+    text-align: right !important;
+    font-size: 22px !important;
+    font-family: "LPMQ", "Amiri", serif !important;
+    line-height: 1.5 !important;
 }

@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Update Font Family
         if (select) {
             const font = select.value;
-            const family = fontStacks[font] || fontStacks['lpmq'];
+            const family = fontStacks[font] || fontStacks['scheherazade'];
             preview.style.fontFamily = family;
         }
 

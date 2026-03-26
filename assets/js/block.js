@@ -37,10 +37,12 @@
             color: { type: 'string', default: '' },
             trans: { type: 'string', default: '' },
             trj: { type: 'string', default: '' },
-            showCopy: { type: 'boolean', default: false }
+            showCopy: { type: 'boolean', default: false },
+            convertNum: { type: 'boolean', default: true },
+            align: { type: 'string', default: 'right' }
         },
         edit: function(props) {
-            const { attributes: { arabText, font, color, trans, trj, showCopy }, setAttributes } = props;
+            const { attributes: { arabText, font, color, trans, trj, showCopy, convertNum, align }, setAttributes } = props;
 
             return createElement(Fragment, null, [
                 createElement(InspectorControls, { key: 'inspector' },
@@ -50,6 +52,16 @@
                             value: font,
                             options: fontOptions,
                             onChange: (val) => setAttributes({ font: val })
+                        }),
+                        createElement(SelectControl, {
+                            label: __('Text Alignment', 'ngarab'),
+                            value: align,
+                            options: [
+                                { label: __('Right', 'ngarab'), value: 'right' },
+                                { label: __('Center', 'ngarab'), value: 'center' },
+                                { label: __('Left', 'ngarab'), value: 'left' }
+                            ],
+                            onChange: (val) => setAttributes({ align: val })
                         })
                     ),
                     createElement(PanelColorSettings, {
@@ -85,6 +97,12 @@
                             label: __('Show Copy Button', 'ngarab'),
                             checked: showCopy,
                             onChange: (val) => setAttributes({ showCopy: val })
+                        }),
+                        createElement(ToggleControl, {
+                            label: __('Convert Numbers', 'ngarab'),
+                            help: __('Convert standard numbers (0-9) to Arabic (٠-٩)', 'ngarab'),
+                            checked: convertNum,
+                            onChange: (val) => setAttributes({ convertNum: val })
                         })
                     )
                 ),
@@ -106,7 +124,7 @@
                             '--ng-arab-color': color || 'inherit',
                             fontFamily: fontStacks[font] || 'inherit',
                             color: color || 'inherit',
-                            textAlign: 'right',
+                            textAlign: align,
                             fontSize: '24pt',
                             direction: 'rtl',
                             margin: '0',
@@ -122,7 +140,7 @@
                             marginTop: '10px',
                             borderTop: '1px solid #eee',
                             paddingTop: '10px',
-                            textAlign: 'left',
+                            textAlign: align === 'center' ? 'center' : (align === 'right' ? 'right' : 'left'),
                             direction: 'ltr'
                         }
                     }, [

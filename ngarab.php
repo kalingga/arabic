@@ -3,7 +3,7 @@
  * Plugin Name: (ng)Arab
  * Plugin URI: https://github.com/khoirulaksara/ngarab
  * Description: Mempercantik tampilan tulisan Arab di WordPress.
- * Version: 3.0.0
+ * Version: 3.1.0
  * Author: Khoirul Aksara
  * Author URI: https://log.serat.us
  * License: GPL2

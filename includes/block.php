@@ -58,6 +58,7 @@ function ngarab_block_render_callback( $attributes, $content ) {
 		'trans'     => $attributes['trans'],
 		'trj'       => $attributes['trj'],
 		'show_copy'  => $attributes['showCopy'] ? '1' : '0',
+		'convert_num' => $attributes['convertNum'] ? '1' : '0',
 	);
 
 	// Reuse the shortcode handler for consistency

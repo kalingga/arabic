@@ -23,6 +23,8 @@ function ngarab_shortcode_handler( $atts, $content = null ) {
 		'trans'    => '', // Transliterasi
 		'trj'      => '', // Terjemahan
 		'show_copy' => '0', // Show Copy Button
+		'convert_num' => get_option( 'ngarab_convert_numbers', 0 ), // Convert standard numbers to Arabic
+		'align'    => 'right', // Text alignment: left, center, right
 	), $atts, 'ngarab' );
 
 	// Font family mapping
@@ -33,8 +35,13 @@ function ngarab_shortcode_handler( $atts, $content = null ) {
 		$style .= " color: {$atts['color']} !important;";
 	}
 
-	$output = '<div class="arab-container">';
-	$output .= '<div class="arab" style="' . esc_attr( $style ) . '">' . do_shortcode( $content ) . '</div>';
+	$content = do_shortcode( $content );
+	if ( '1' === (string) $atts['convert_num'] || true === $atts['convert_num'] ) {
+		$content = ngarab_convert_arabic_numbers( $content );
+	}
+
+	$output = '<div class="arab-container" style="text-align: ' . esc_attr( $atts['align'] ) . ';">';
+	$output .= '<div class="arab" style="' . esc_attr( $style ) . '">' . $content . '</div>';
 
 	// Transliteration & Translation
 	if ( ! empty( $atts['trans'] ) || ! empty( $atts['trj'] ) ) {

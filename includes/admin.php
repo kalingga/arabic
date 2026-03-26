@@ -14,6 +14,7 @@ function ngarab_register_settings() {
 	register_setting( 'ngarab_settings_group', 'ngarab_font_size', array( 'sanitize_callback' => 'absint' ) );
 	register_setting( 'ngarab_settings_group', 'ngarab_line_height', array( 'sanitize_callback' => 'absint' ) );
 	register_setting( 'ngarab_settings_group', 'ngarab_font_family', array( 'sanitize_callback' => 'ngarab_sanitize_font_family' ) );
+	register_setting( 'ngarab_settings_group', 'ngarab_convert_numbers', array( 'sanitize_callback' => 'rest_sanitize_boolean' ) );
 }
 
 /**
@@ -21,7 +22,7 @@ function ngarab_register_settings() {
  */
 function ngarab_sanitize_font_family( $value ) {
 	$valid_fonts = array_keys( ngarab_get_font_stacks() );
-	return in_array( $value, $valid_fonts, true ) ? $value : 'lpmq';
+	return in_array( $value, $valid_fonts, true ) ? $value : 'scheherazade';
 }
 
 /**
@@ -79,7 +80,7 @@ function ngarab_settings_page() {
 							<tr valign="top">
 								<th scope="row"><?php esc_html_e( 'Default Arabic Font', 'ngarab' ); ?></th>
 								<td>
-									<?php $current_font = get_option( 'ngarab_font_family', 'lpmq' ); ?>
+									<?php $current_font = get_option( 'ngarab_font_family', 'scheherazade' ); ?>
 									<select name="ngarab_font_family" id="ngarab_font_family_select">
 										<option value="lpmq" <?php selected( $current_font, 'lpmq' ); ?>><?php esc_html_e( 'LPMQ Isep Misbah (Local Special)', 'ngarab' ); ?></option>
 										<option value="amiri" <?php selected( $current_font, 'amiri' ); ?>><?php esc_html_e( 'Amiri (Google Font)', 'ngarab' ); ?></option>
@@ -88,6 +89,15 @@ function ngarab_settings_page() {
 										<option value="noto-nastaliq" <?php selected( $current_font, 'noto-nastaliq' ); ?>><?php esc_html_e( 'Noto Nastaliq Urdu (Google Font)', 'ngarab' ); ?></option>
 										<option value="scheherazade" <?php selected( $current_font, 'scheherazade' ); ?>><?php esc_html_e( 'Scheherazade New (Google Font)', 'ngarab' ); ?></option>
 									</select>
+								</td>
+							</tr>
+							<tr valign="top">
+								<th scope="row"><?php esc_html_e( 'Convert Numbers', 'ngarab' ); ?></th>
+								<td>
+									<label class="ngarab-switch">
+										<input type="checkbox" name="ngarab_convert_numbers" value="1" <?php checked( get_option( 'ngarab_convert_numbers' ), 1 ); ?> />
+										<span class="ngarab-switch-label"><?php esc_html_e( 'Convert standard numbers (0-9) to Arabic numerals (٠-٩)', 'ngarab' ); ?></span>
+									</label>
 								</td>
 							</tr>
 						</table>
@@ -170,7 +180,7 @@ function ngarab_add_tinymce_button() {
 }
 
 function ngarab_add_tinymce_plugin( $plugin_array ) {
-	$plugin_array['ngarab'] = plugins_url( 'assets/js/editor.js', dirname( __FILE__ ) );
+	$plugin_array['ngarab'] = plugins_url( 'assets/js/editor.js?v=' . NGARAB_VERSION, dirname( __FILE__ ) );
 	return $plugin_array;
 }
 
